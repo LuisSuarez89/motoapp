@@ -146,6 +146,41 @@
       "name": "GK350",
       "category": "Naked",
       "sections": []
+    },
+    {
+      "name": "155 U",
+      "category": "Naked",
+      "sections": []
+    },
+    {
+      "name": "310 M",
+      "category": "Scooter",
+      "sections": []
+    },
+    {
+      "name": "350 X1",
+      "category": "Sport Touring",
+      "sections": []
+    },
+    {
+      "name": "350 T1",
+      "category": "Adventure",
+      "sections": []
+    },
+    {
+      "name": "350 R1",
+      "category": "Naked",
+      "sections": []
+    },
+    {
+      "name": "368 M",
+      "category": "Scooter",
+      "sections": []
+    },
+    {
+      "name": "368 G",
+      "category": "Scooter",
+      "sections": []
     }
   ]
 }
