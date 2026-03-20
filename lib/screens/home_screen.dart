@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/app_models.dart';
 import '../services/app_data_service.dart';
+import '../widgets/modern_dropdown.dart';
 import 'motorcycle_detail_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -100,36 +101,56 @@ class _SelectionView extends StatelessWidget {
     final models = selectedBrand?.models ?? <MotorcycleModel>[];
 
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
       children: [
-        Text(
-          'Selecciona tu moto para personalizar clima, talleres, repuestos, videos y redes sociales.',
-          style: Theme.of(context).textTheme.titleMedium,
+        Container(
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primaryContainer.withAlpha(50),
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '¡Bienvenido!',
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Selecciona tu moto para personalizar clima, talleres, repuestos, videos y redes sociales.',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+            ],
+          ),
         ),
-        const SizedBox(height: 24),
-        DropdownButtonFormField<CountryData>(
+        const SizedBox(height: 32),
+        ModernDropdown<CountryData>(
+          label: 'País',
           value: selectedCountry,
-          decoration: const InputDecoration(labelText: 'País', border: OutlineInputBorder()),
-          items: data.countries
-              .map((country) => DropdownMenuItem(value: country, child: Text(country.name)))
-              .toList(),
+          items: data.countries,
+          itemLabelBuilder: (country) => country.name,
           onChanged: onCountryChanged,
         ),
-        const SizedBox(height: 16),
-        DropdownButtonFormField<BrandData>(
+        const SizedBox(height: 20),
+        ModernDropdown<BrandData>(
+          label: 'Marca',
           value: selectedBrand,
-          decoration: const InputDecoration(labelText: 'Marca', border: OutlineInputBorder()),
-          items: brands.map((brand) => DropdownMenuItem(value: brand, child: Text(brand.name))).toList(),
+          items: brands,
+          itemLabelBuilder: (brand) => brand.name,
           onChanged: selectedCountry == null ? null : onBrandChanged,
         ),
-        const SizedBox(height: 16),
-        DropdownButtonFormField<MotorcycleModel>(
+        const SizedBox(height: 20),
+        ModernDropdown<MotorcycleModel>(
+          label: 'Modelo',
           value: selectedModel,
-          decoration: const InputDecoration(labelText: 'Modelo', border: OutlineInputBorder()),
-          items: models.map((model) => DropdownMenuItem(value: model, child: Text(model.name))).toList(),
+          items: models,
+          itemLabelBuilder: (model) => model.name,
           onChanged: selectedBrand == null ? null : onModelChanged,
         ),
-        const SizedBox(height: 24),
+        const SizedBox(height: 48),
         FilledButton.icon(
           onPressed: onContinue,
           icon: const Icon(Icons.two_wheeler),

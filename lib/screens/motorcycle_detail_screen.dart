@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../models/app_models.dart';
+import '../widgets/section_card.dart';
+import '../widgets/review_checklist_card.dart';
 import 'scanner_screen.dart';
 
 class MotorcycleDetailScreen extends StatelessWidget {
@@ -34,6 +35,7 @@ class MotorcycleDetailScreen extends StatelessWidget {
               Tab(text: 'Revisiones'),
               Tab(text: 'Secciones'),
             ],
+            indicatorWeight: 3,
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(
@@ -47,8 +49,8 @@ class MotorcycleDetailScreen extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            _ReviewList(model: model),
-            _SectionList(sections: allSections),
+            _ReviewListView(model: model),
+            _SectionListView(sections: allSections),
           ],
         ),
       ),
@@ -56,8 +58,8 @@ class MotorcycleDetailScreen extends StatelessWidget {
   }
 }
 
-class _ReviewList extends StatelessWidget {
-  const _ReviewList({required this.model});
+class _ReviewListView extends StatelessWidget {
+  const _ReviewListView({required this.model});
 
   final MotorcycleModel model;
 
@@ -67,29 +69,14 @@ class _ReviewList extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       itemCount: model.reviewChecklist.length,
       itemBuilder: (context, index) {
-        final checkpoint = model.reviewChecklist[index];
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ExpansionTile(
-            leading: const Icon(Icons.build_circle_outlined),
-            title: Text('${checkpoint.km} · ${checkpoint.title}'),
-            children: checkpoint.items
-                .map(
-                  (item) => ListTile(
-                    leading: const Icon(Icons.check_circle_outline),
-                    title: Text(item),
-                  ),
-                )
-                .toList(),
-          ),
-        );
+        return ReviewChecklistCard(checkpoint: model.reviewChecklist[index]);
       },
     );
   }
 }
 
-class _SectionList extends StatelessWidget {
-  const _SectionList({required this.sections});
+class _SectionListView extends StatelessWidget {
+  const _SectionListView({required this.sections});
 
   final List<ContentSection> sections;
 
@@ -99,72 +86,11 @@ class _SectionList extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       itemCount: sections.length,
       itemBuilder: (context, index) {
-        final section = sections[index];
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ExpansionTile(
-            initiallyExpanded: index == 0,
-            leading: Icon(_iconForSection(section.id)),
-            title: Text(section.title),
-            subtitle: Text(section.description),
-            children: section.items
-                .map(
-                  (item) => ListTile(
-                    title: Text(item.title),
-                    subtitle: Text(item.subtitle),
-                    trailing: const Icon(Icons.open_in_new),
-                    onTap: () => _handleItemTap(item, context),
-                  ),
-                )
-                .toList(),
-          ),
+        return SectionCard(
+          section: sections[index],
+          initiallyExpanded: index == 0,
         );
       },
     );
-  }
-
-  IconData _iconForSection(String id) {
-    switch (id) {
-      case 'climate':
-        return Icons.cloud_outlined;
-      case 'roads':
-        return Icons.route_outlined;
-      case 'workshops':
-        return Icons.garage_outlined;
-      case 'parts':
-        return Icons.settings_input_component_outlined;
-      case 'videos':
-        return Icons.play_circle_outline;
-      case 'social':
-        return Icons.groups_outlined;
-      default:
-        return Icons.info_outline;
-    }
-  }
-
-  Future<void> _handleItemTap(SectionItem item, BuildContext context) async {
-    if (item.type == 'phone') {
-      final uri = Uri(scheme: 'tel', path: item.value);
-      if (!await launchUrl(uri) && context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('No fue posible llamar a ${item.value}.')),
-        );
-      }
-      return;
-    }
-
-    if (<String>{'link', 'map', 'whatsapp', 'social'}.contains(item.type)) {
-      final uri = Uri.parse(item.value);
-      if (!await launchUrl(uri, mode: LaunchMode.externalApplication) && context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('No fue posible abrir ${item.title}.')),
-        );
-      }
-      return;
-    }
-
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(item.value)));
-    }
   }
 }
