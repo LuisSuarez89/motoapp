@@ -44,15 +44,15 @@ class MotorcycleDetailScreen extends ConsumerWidget {
                 indicatorWeight: 3,
               ),
             ),
-            floatingActionButton: FloatingActionButton.extended(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute<void>(builder: (_) => const ScannerScreen()),
-                );
-              },
-              icon: const Icon(Icons.bluetooth_searching),
-              label: const Text('Escáner OBD2'),
-            ),
+            // floatingActionButton: FloatingActionButton.extended(
+            //   onPressed: () {
+            //     Navigator.of(context).push(
+            //       MaterialPageRoute<void>(builder: (_) => const ScannerScreen()),
+            //     );
+            //   },
+            //   icon: const Icon(Icons.bluetooth_searching),
+            //   label: const Text('Escáner OBD2'),
+            // ),
             body: TabBarView(
               children: [
                 _SectionListView(sections: allSections),
