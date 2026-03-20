@@ -1,0 +1,328 @@
+{
+  "countries": [
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "generalSections": [
+        {
+          "id": "climate",
+          "title": "Clima",
+          "description": "Consulta rápida del radar de lluvias en Bogotá y alrededores.",
+          "items": [
+            {
+              "title": "Radar SAB Bogotá",
+              "subtitle": "Lluvias Bogotá y alrededores",
+              "type": "link",
+              "value": "https://app.sab.gov.co/sab/lluvias.htm",
+              "tags": ["bogota", "lluvias"]
+            },
+            {
+              "title": "Radar animado SIRE",
+              "subtitle": "Mapa animado de precipitaciones",
+              "type": "link",
+              "value": "https://evp.sire.gov.co/radar_animate/inicio.html#10/4.6633/-74.1481",
+              "tags": ["bogota", "radar"]
+            }
+          ]
+        },
+        {
+          "id": "roads",
+          "title": "Estado de las vías",
+          "description": "Canales oficiales para revisar novedades de movilidad y cierres.",
+          "items": [
+            {
+              "title": "INVIAS #767",
+              "subtitle": "Línea nacional de información vial",
+              "type": "phone",
+              "value": "767",
+              "tags": ["vias", "invias"]
+            },
+            {
+              "title": "X de Invías",
+              "subtitle": "Actualizaciones en tiempo real",
+              "type": "social",
+              "value": "https://x.com/InviasOficial",
+              "tags": ["social", "x"]
+            }
+          ]
+        },
+        {
+          "id": "tow",
+          "title": "Grúas",
+          "description": "Números útiles para emergencias y transporte de moto.",
+          "items": [
+            {"title": "Grúa 1", "subtitle": "+57 319 7029028", "type": "phone", "value": "+573197029028", "tags": ["grua"]},
+            {"title": "Grúa 2", "subtitle": "+57 300 2928181", "type": "phone", "value": "+573002928181", "tags": ["grua"]},
+            {"title": "Grúa 3", "subtitle": "+57 311 2800853", "type": "phone", "value": "+573112800853", "tags": ["grua"]},
+            {"title": "Grúa 4", "subtitle": "+57 315 5763888", "type": "phone", "value": "+573155763888", "tags": ["grua"]},
+            {"title": "Grúa 5", "subtitle": "+57 312 3938977", "type": "phone", "value": "+573123938977", "tags": ["grua"]}
+          ]
+        }
+      ],
+      "brands": [
+        {
+          "name": "Zontes",
+          "sharedSections": [
+            {
+              "id": "parts",
+              "title": "Repuestos Zontes / Auteco",
+              "description": "Recursos para repuestos, manuales y soporte postventa.",
+              "items": [
+                {
+                  "title": "One Click MAZ",
+                  "subtitle": "Catálogo de repuestos Zontes T2",
+                  "type": "link",
+                  "value": "https://oneclickmaz.com/categoria-producto/repuestos/rep_zontes/rep_zontes-t2/",
+                  "tags": ["repuestos", "zontes"]
+                },
+                {
+                  "title": "Guía de repuestos Zontes",
+                  "subtitle": "Hoja de cálculo colaborativa",
+                  "type": "link",
+                  "value": "https://docs.google.com/spreadsheets/d/1q5gpddOQWkrylJ9BP7PKiGaO8zLnw_CX5VWPF4tGKbQ/edit?usp=sharing",
+                  "tags": ["repuestos", "guia"]
+                },
+                {
+                  "title": "Manuales de partes Auteco",
+                  "subtitle": "Partes de vehículos y propietarios",
+                  "type": "link",
+                  "value": "https://www.auteco.com.co/blog/post/manuales-de-partes-de-vehiculos-y-propietarios",
+                  "tags": ["manuales", "auteco"]
+                },
+                {
+                  "title": "Garantía y mantenimiento",
+                  "subtitle": "Manuales de usuario y garantía Zontes",
+                  "type": "link",
+                  "value": "https://www.auteco.com.co/blog/post/manuales-de-garantia-y-mantenimiento",
+                  "tags": ["garantia", "manuales"]
+                },
+                {
+                  "title": "Descargas internacionales Zontes",
+                  "subtitle": "Centro de descargas oficial",
+                  "type": "link",
+                  "value": "https://www.zontes.com/en/AboutUs/Download.aspx",
+                  "tags": ["manuales", "internacional"]
+                },
+                {
+                  "title": "ManualsLib",
+                  "subtitle": "Biblioteca de manuales",
+                  "type": "link",
+                  "value": "https://www.manualslib.com",
+                  "tags": ["manuales"]
+                },
+                {
+                  "title": "Manual de fusibles Zontes",
+                  "subtitle": "Documento Scribd",
+                  "type": "link",
+                  "value": "https://www.scribd.com/document/762487478/zontes-fuse",
+                  "tags": ["fusibles"]
+                },
+                {
+                  "title": "WhatsApp repuestos Auteco",
+                  "subtitle": "Solicitud directa de repuestos",
+                  "type": "whatsapp",
+                  "value": "https://bit.ly/3T2yc0c",
+                  "tags": ["whatsapp", "repuestos"]
+                },
+                {
+                  "title": "Portal repuestos originales Auteco",
+                  "subtitle": "Catálogo general de repuestos",
+                  "type": "link",
+                  "value": "https://www.auteco.com.co/repuestos-originales-para-motos",
+                  "tags": ["repuestos", "auteco"]
+                }
+              ]
+            },
+            {
+              "id": "workshops",
+              "title": "Talleres recomendados",
+              "description": "Opciones para Zontes y otras motos vendidas por Auteco en Bogotá.",
+              "items": [
+                {
+                  "title": "Kawastore",
+                  "subtitle": "Norte · Garantía · Cel: 320 4909092",
+                  "type": "map",
+                  "value": "https://maps.app.goo.gl/zC1Nv86k6su5wnyW8",
+                  "tags": ["taller", "garantia", "norte"]
+                },
+                {
+                  "title": "Motoplanet",
+                  "subtitle": "Norte · Garantía · Cel: 3044553882",
+                  "type": "map",
+                  "value": "https://maps.app.goo.gl/aHt9FU3k8x6WQ52u7",
+                  "tags": ["taller", "garantia", "norte"]
+                },
+                {
+                  "title": "Ani Motos",
+                  "subtitle": "Sur · Sin garantía · Cel: 301 3306460",
+                  "type": "map",
+                  "value": "https://maps.app.goo.gl/c9hCzTgneSq9hsW29",
+                  "tags": ["taller", "sur"]
+                },
+                {
+                  "title": "7Torques",
+                  "subtitle": "Sur · Sin garantía · Cel: +57 319 6610567",
+                  "type": "map",
+                  "value": "https://maps.app.goo.gl/E3U5cqRBhuxwJ4f6A",
+                  "tags": ["taller", "sur"]
+                }
+              ]
+            },
+            {
+              "id": "videos",
+              "title": "Videos de mantenimiento",
+              "description": "Contenido para hacer mantenimiento por tu cuenta.",
+              "items": [
+                {
+                  "title": "Zontes MV Show",
+                  "subtitle": "Videos de mantenimiento Hágalo Ud. mismo",
+                  "type": "link",
+                  "value": "https://www.zontes.com/SP/MV/MvShow2.aspx",
+                  "tags": ["videos", "mantenimiento"]
+                }
+              ]
+            }
+          ],
+          "models": [
+            {
+              "name": "T2 350",
+              "category": "Adventure",
+              "reviewChecklist": [
+                {
+                  "km": "500 km",
+                  "title": "Primer ajuste",
+                  "items": [
+                    "Revisar torque general visible",
+                    "Verificar tensión y lubricación de cadena",
+                    "Comprobar nivel de aceite y fugas"
+                  ]
+                },
+                {
+                  "km": "3.000 km",
+                  "title": "Inspección periódica",
+                  "items": [
+                    "Revisar pastillas de freno",
+                    "Inspeccionar presión y desgaste de llantas",
+                    "Verificar carga de batería"
+                  ]
+                },
+                {
+                  "km": "6.000 km",
+                  "title": "Mantenimiento intermedio",
+                  "items": [
+                    "Cambio de aceite y filtro",
+                    "Limpieza o cambio de filtro de aire",
+                    "Revisión de bujía y sistema eléctrico"
+                  ]
+                }
+              ],
+              "sections": [
+                {
+                  "id": "social",
+                  "title": "Redes sociales",
+                  "description": "Canales útiles para comunidad y soporte.",
+                  "items": [
+                    {
+                      "title": "Invías en X",
+                      "subtitle": "Referencia de movilidad nacional",
+                      "type": "social",
+                      "value": "https://x.com/InviasOficial",
+                      "tags": ["x", "movilidad"]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GK350",
+              "category": "Naked",
+              "reviewChecklist": [
+                {
+                  "km": "1.000 km",
+                  "title": "Post ablande",
+                  "items": [
+                    "Cambio de aceite si aplica según manual",
+                    "Revisar embrague y juego libre",
+                    "Inspección visual de tornillería"
+                  ]
+                },
+                {
+                  "km": "5.000 km",
+                  "title": "Chequeo integral",
+                  "items": [
+                    "Verificar refrigerante",
+                    "Revisión de kit de arrastre",
+                    "Inspeccionar iluminación y fusibles"
+                  ]
+                }
+              ],
+              "sections": []
+            }
+          ]
+        },
+        {
+          "name": "Yamaha",
+          "sharedSections": [],
+          "models": [
+            {
+              "name": "XTZ 150",
+              "category": "Dual purpose",
+              "reviewChecklist": [
+                {
+                  "km": "1.000 km",
+                  "title": "Primera revisión",
+                  "items": [
+                    "Revisión de aceite",
+                    "Ajuste de cadena",
+                    "Inspección de llantas y radios"
+                  ]
+                },
+                {
+                  "km": "4.000 km",
+                  "title": "Servicio periódico",
+                  "items": [
+                    "Limpieza de filtro de aire",
+                    "Revisar freno delantero y trasero",
+                    "Verificar holgura del acelerador"
+                  ]
+                }
+              ],
+              "sections": []
+            }
+          ]
+        },
+        {
+          "name": "Honda",
+          "sharedSections": [],
+          "models": [
+            {
+              "name": "XR 190L",
+              "category": "Trail",
+              "reviewChecklist": [
+                {
+                  "km": "1.000 km",
+                  "title": "Chequeo inicial",
+                  "items": [
+                    "Inspección de aceite del motor",
+                    "Revisión de cadena y corona",
+                    "Verificación de presión de llantas"
+                  ]
+                },
+                {
+                  "km": "6.000 km",
+                  "title": "Mantenimiento general",
+                  "items": [
+                    "Cambio de aceite",
+                    "Limpieza del filtro de aire",
+                    "Revisión del sistema de frenos"
+                  ]
+                }
+              ],
+              "sections": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
