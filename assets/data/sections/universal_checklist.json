@@ -1,0 +1,42 @@
+[
+  {
+    "km": "1.000 Km",
+    "title": "Ajuste inicial",
+    "items": [
+      { "id": "motor_fluido_1k", "text": "Cambio de aceite de motor y filtro" },
+      { "id": "motor_refrigerante_1k", "text": "Revisión del nivel de líquido refrigerante y comprobación de posibles fugas" },
+      { "id": "frenos_liquido_1k", "text": "Verificación del nivel de líquido de frenos (dot 4 o el recomendado)" },
+      { "id": "frenos_pastillas_1k", "text": "Desgaste de las pastillas y discos de freno" },
+      { "id": "transmision_cadena_1k", "text": "Limpieza, lubricación y ajuste de la tensión de la cadena (o revisión de banda/cardán)" },
+      { "id": "llantas_presion_1k", "text": "Revisión de la presión de aire (PSI)" },
+      { "id": "llantas_dibujo_1k", "text": "Revisión de la profundidad del dibujo para asegurar un buen agarre" },
+      { "id": "electrico_luces_1k", "text": "Funcionamiento de luces (altas, bajas, direccionales, freno)" },
+      { "id": "electrico_bateria_1k", "text": "Funcionamiento de la bocina y el estado de la batería" },
+      { "id": "filtros_aire_1k", "text": "Limpieza o cambio del filtro de aire" },
+      { "id": "filtros_bujia_1k", "text": "Revisión/cambio de la bujía para una correcta combustión" },
+      { "id": "mandos_cables_1k", "text": "Lubricación y ajuste de los cables de embrague y acelerador" }
+    ]
+  },
+  {
+    "km": "Cada 3.000 - 5.000 Km",
+    "title": "Inspección periódica",
+    "items": [
+      { "id": "motor_fluido_3k", "text": "Cambio de aceite de motor y filtro" },
+      { "id": "frenos_pastillas_3k", "text": "Revisión de frenos (desgaste de pastillas y discos)" },
+      { "id": "transmision_cadena_3k", "text": "Limpieza, lubricación y ajuste de tensión de cadena" }
+    ]
+  },
+  {
+    "km": "Anual",
+    "title": "Revisión completa",
+    "items": [
+      { "id": "motor_fluido_anual", "text": "Cambio de todos los fluidos y revisión exhaustiva de fugas" },
+      { "id": "frenos_liquido_anual", "text": "Cambio de líquido de frenos y purgado" },
+      { "id": "transmision_cadena_anual", "text": "Mantenimiento general de transmisión" },
+      { "id": "llantas_estado_anual", "text": "Verificación integral de rines, radios y estado de neumático" },
+      { "id": "electrico_bateria_anual", "text": "Revisión profunda del sistema eléctrico e inspección de fusibles" },
+      { "id": "filtros_aire_anual", "text": "Sustitución de filtro de aire y bujía nueva" },
+      { "id": "mandos_cables_anual", "text": "Sustitución de cables desgastados e hidratación de guayas" }
+    ]
+  }
+]

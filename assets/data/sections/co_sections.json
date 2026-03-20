@@ -1,0 +1,56 @@
+[
+  {
+    "id": "climate",
+    "title": "Clima",
+    "description": "Consulta rápida del radar de lluvias en Bogotá y alrededores.",
+    "items": [
+      {
+        "title": "Radar SAB Bogotá",
+        "subtitle": "Lluvias Bogotá y alrededores",
+        "type": "link",
+        "value": "https://app.sab.gov.co/sab/lluvias.htm",
+        "tags": ["bogota", "lluvias"]
+      },
+      {
+        "title": "Radar animado SIRE",
+        "subtitle": "Mapa animado de precipitaciones",
+        "type": "link",
+        "value": "https://evp.sire.gov.co/radar_animate/inicio.html#10/4.6633/-74.1481",
+        "tags": ["bogota", "radar"]
+      }
+    ]
+  },
+  {
+    "id": "roads",
+    "title": "Estado de las vías",
+    "description": "Canales oficiales para revisar novedades de movilidad y cierres.",
+    "items": [
+      {
+        "title": "INVIAS #767",
+        "subtitle": "Línea nacional de información vial",
+        "type": "phone",
+        "value": "767",
+        "tags": ["vias", "invias"]
+      },
+      {
+        "title": "X de Invías",
+        "subtitle": "Actualizaciones en tiempo real",
+        "type": "social",
+        "value": "https://x.com/InviasOficial",
+        "tags": ["social", "x"]
+      }
+    ]
+  },
+  {
+    "id": "tow",
+    "title": "Grúas",
+    "description": "Números útiles para emergencias y transporte de moto.",
+    "items": [
+      {"title": "Grúa 1", "subtitle": "+57 319 7029028", "type": "phone", "value": "+573197029028", "tags": ["grua"]},
+      {"title": "Grúa 2", "subtitle": "+57 300 2928181", "type": "phone", "value": "+573002928181", "tags": ["grua"]},
+      {"title": "Grúa 3", "subtitle": "+57 311 2800853", "type": "phone", "value": "+573112800853", "tags": ["grua"]},
+      {"title": "Grúa 4", "subtitle": "+57 315 5763888", "type": "phone", "value": "+573155763888", "tags": ["grua"]},
+      {"title": "Grúa 5", "subtitle": "+57 312 3938977", "type": "phone", "value": "+573123938977", "tags": ["grua"]}
+    ]
+  }
+]

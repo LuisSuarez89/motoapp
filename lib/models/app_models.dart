@@ -1,15 +1,13 @@
 class AppData {
-  AppData({required this.countries});
+  AppData({
+    required this.countries,
+    required this.universalChecklist,
+  });
 
   final List<CountryData> countries;
+  final List<ReviewCheckpoint> universalChecklist;
 
-  factory AppData.fromJson(Map<String, dynamic> json) {
-    return AppData(
-      countries: (json['countries'] as List<dynamic>)
-          .map((country) => CountryData.fromJson(country as Map<String, dynamic>))
-          .toList(),
-    );
-  }
+  // factory no es necesaria para la carga modular nueva, pero se mantiene la estructura
 }
 
 class CountryData {
@@ -29,10 +27,10 @@ class CountryData {
     return CountryData(
       code: json['code'] as String,
       name: json['name'] as String,
-      generalSections: (json['generalSections'] as List<dynamic>)
+      generalSections: (json['generalSections'] as List<dynamic>? ?? [])
           .map((section) => ContentSection.fromJson(section as Map<String, dynamic>))
           .toList(),
-      brands: (json['brands'] as List<dynamic>)
+      brands: (json['brands'] as List<dynamic>? ?? [])
           .map((brand) => BrandData.fromJson(brand as Map<String, dynamic>))
           .toList(),
     );
@@ -63,22 +61,17 @@ class MotorcycleModel {
   MotorcycleModel({
     required this.name,
     required this.category,
-    required this.reviewChecklist,
     required this.sections,
   });
 
   final String name;
   final String category;
-  final List<ReviewCheckpoint> reviewChecklist;
   final List<ContentSection> sections;
 
   factory MotorcycleModel.fromJson(Map<String, dynamic> json) {
     return MotorcycleModel(
       name: json['name'] as String,
       category: json['category'] as String? ?? 'General',
-      reviewChecklist: (json['reviewChecklist'] as List<dynamic>)
-          .map((item) => ReviewCheckpoint.fromJson(item as Map<String, dynamic>))
-          .toList(),
       sections: (json['sections'] as List<dynamic>? ?? const [])
           .map((section) => ContentSection.fromJson(section as Map<String, dynamic>))
           .toList(),
@@ -95,13 +88,32 @@ class ReviewCheckpoint {
 
   final String km;
   final String title;
-  final List<String> items;
+  final List<ChecklistItem> items;
 
   factory ReviewCheckpoint.fromJson(Map<String, dynamic> json) {
     return ReviewCheckpoint(
       km: json['km'] as String,
       title: json['title'] as String,
-      items: (json['items'] as List<dynamic>).map((item) => item as String).toList(),
+      items: (json['items'] as List<dynamic>)
+          .map((item) => ChecklistItem.fromJson(item as Map<String, dynamic>))
+          .toList(),
+    );
+  }
+}
+
+class ChecklistItem {
+  ChecklistItem({
+    required this.id,
+    required this.text,
+  });
+
+  final String id;
+  final String text;
+
+  factory ChecklistItem.fromJson(Map<String, dynamic> json) {
+    return ChecklistItem(
+      id: json['id'] as String,
+      text: json['text'] as String,
     );
   }
 }
