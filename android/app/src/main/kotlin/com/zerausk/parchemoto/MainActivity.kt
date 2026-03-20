@@ -1,4 +1,4 @@
-package com.example.motoapp
+package com.zerausk.parchemoto
 
 import io.flutter.embedding.android.FlutterActivity
 

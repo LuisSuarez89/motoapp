@@ -5,6 +5,7 @@ import '../models/app_models.dart';
 import '../services/app_data_service.dart';
 import '../widgets/section_card.dart';
 import '../widgets/review_checklist_card.dart';
+// ignore: unused_import
 import 'scanner_screen.dart';
 
 class MotorcycleDetailScreen extends ConsumerWidget {
