@@ -5,6 +5,7 @@ import '../models/app_models.dart';
 import '../services/app_data_service.dart';
 import '../widgets/section_card.dart';
 import '../widgets/review_checklist_card.dart';
+import '../widgets/ad_banner.dart';
 // ignore: unused_import
 import 'scanner_screen.dart';
 
@@ -54,10 +55,17 @@ class MotorcycleDetailScreen extends ConsumerWidget {
             //   icon: const Icon(Icons.bluetooth_searching),
             //   label: const Text('Escáner OBD2'),
             // ),
-            body: TabBarView(
+            body: Column(
               children: [
-                _SectionListView(sections: allSections),
-                _ReviewListView(checklist: appData.universalChecklist),
+                Expanded(
+                  child: TabBarView(
+                    children: [
+                      _SectionListView(sections: allSections),
+                      _ReviewListView(checklist: appData.universalChecklist),
+                    ],
+                  ),
+                ),
+                const AdBanner(),
               ],
             ),
           ),

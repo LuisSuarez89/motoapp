@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/app_models.dart';
 import '../services/app_data_service.dart';
 import '../widgets/modern_dropdown.dart';
+import '../widgets/ad_banner.dart';
 import 'motorcycle_detail_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -24,51 +25,58 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('MotoApp Colombia')),
-      body: appData.when(
-        data: (data) => _SelectionView(
-          data: data,
-          selectedCountry: selectedCountry,
-          selectedBrand: selectedBrand,
-          selectedModel: selectedModel,
-          onCountryChanged: (country) {
-            setState(() {
-              selectedCountry = country;
-              selectedBrand = null;
-              selectedModel = null;
-            });
-          },
-          onBrandChanged: (brand) {
-            setState(() {
-              selectedBrand = brand;
-              selectedModel = null;
-            });
-          },
-          onModelChanged: (model) {
-            setState(() {
-              selectedModel = model;
-            });
-          },
-          onContinue: () {
-            if (selectedCountry == null || selectedBrand == null || selectedModel == null) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Selecciona país, marca y modelo para continuar.')),
-              );
-              return;
-            }
+      body: Column(
+        children: [
+          Expanded(
+            child: appData.when(
+              data: (data) => _SelectionView(
+                data: data,
+                selectedCountry: selectedCountry,
+                selectedBrand: selectedBrand,
+                selectedModel: selectedModel,
+                onCountryChanged: (country) {
+                  setState(() {
+                    selectedCountry = country;
+                    selectedBrand = null;
+                    selectedModel = null;
+                  });
+                },
+                onBrandChanged: (brand) {
+                  setState(() {
+                    selectedBrand = brand;
+                    selectedModel = null;
+                  });
+                },
+                onModelChanged: (model) {
+                  setState(() {
+                    selectedModel = model;
+                  });
+                },
+                onContinue: () {
+                  if (selectedCountry == null || selectedBrand == null || selectedModel == null) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Selecciona país, marca y modelo para continuar.')),
+                    );
+                    return;
+                  }
 
-            Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => MotorcycleDetailScreen(
-                  country: selectedCountry!,
-                  brand: selectedBrand!,
-                  model: selectedModel!,
-                ),
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => MotorcycleDetailScreen(
+                        country: selectedCountry!,
+                        brand: selectedBrand!,
+                        model: selectedModel!,
+                      ),
+                    ),
+                  );
+                },
               ),
-            );
-          },
-        ),
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, stack) => Center(child: Text('No fue posible cargar los datos: $error')),
+              loading: () => const Center(child: CircularProgressIndicator()),
+              error: (error, stack) => Center(child: Text('No fue posible cargar los datos: $error')),
+            ),
+          ),
+          const AdBanner(),
+        ],
       ),
     );
   }
