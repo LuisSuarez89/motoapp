@@ -30,7 +30,7 @@ flutter:
     - assets/data/sections/
     - assets/data/brands/
 
-flutter_icons:
+flutter_launcher_icons:
   android: true
   ios: true
   image_path: "assets/icon/app_icon.png" # La ruta a tu imagen
