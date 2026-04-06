@@ -1,5 +1,26 @@
 [
-  { "name": "Zontes" },
+  { "name": "Agusta" },
+  { "name": "Akt" },
+  { "name": "Aprilia" },
+  { "name": "Benelli" },
+  { "name": "Bmw" },
+  { "name": "Can-Am" },
+  { "name": "Ceronte" },
+  { "name": "Cfmoto" },
+  { "name": "Harley-Davidson" },
+  { "name": "Honda" },
+  { "name": "Husqvarna" },
+  { "name": "Kawasaki" },
+  { "name": "Ktm" },
+  { "name": "Kymco" },
+  { "name": "Moto Guzzi" },
+  { "name": "Piaggio" },
+  { "name": "Polaris" },
+  { "name": "Royal Enfield" },
+  { "name": "Suzuki" },
+  { "name": "Tvs" },
+  { "name": "Vespa" },
+  { "name": "Victory" },
   { "name": "Yamaha" },
-  { "name": "Honda" }
+  { "name": "Zontes" }
 ]
