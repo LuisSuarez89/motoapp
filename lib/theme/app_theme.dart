@@ -59,4 +59,66 @@ class AppTheme {
       ),
     );
   }
+
+  static ThemeData get darkTheme {
+    return ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: const Color(0xFFD32F2F),
+        brightness: Brightness.dark,
+        primary: const Color(0xFFEF5350), // Lighter red for dark mode
+        secondary: const Color(0xFF64B5F6), // Lighter blue for dark mode
+        surface: const Color(0xFF1E1E1E),
+      ),
+      textTheme: const TextTheme(
+        headlineMedium: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        titleMedium: TextStyle(fontWeight: FontWeight.w600, color: Colors.white70),
+        bodyMedium: TextStyle(color: Colors.white60),
+      ),
+      cardTheme: const CardThemeData(
+        elevation: 4,
+        shadowColor: Colors.black45,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(16)),
+        ),
+        margin: EdgeInsets.only(bottom: 16),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: const Color(0xFF2C2C2C),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide.none,
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide.none,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: Color(0xFFEF5350), width: 2),
+        ),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      ),
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        ),
+      ),
+      appBarTheme: const AppBarTheme(
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.white),
+        titleTextStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
+      ),
+    );
+  }
 }
+

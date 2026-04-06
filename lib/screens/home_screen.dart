@@ -6,6 +6,7 @@ import '../models/app_models.dart';
 import '../services/app_data_service.dart';
 import '../widgets/modern_dropdown.dart';
 import '../widgets/ad_banner.dart';
+import '../theme/theme_provider.dart';
 import 'motorcycle_detail_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -76,7 +77,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     });
 
     return Scaffold(
-      appBar: AppBar(title: const Text('MotoApp Colombia')),
+      appBar: AppBar(
+        title: const Text('MotoApp Colombia'),
+        actions: [
+          IconButton(
+            icon: Icon(ref.watch(themeModeProvider) == ThemeMode.dark 
+                ? Icons.light_mode 
+                : Icons.dark_mode),
+            onPressed: () {
+              ref.read(themeModeProvider.notifier).toggleTheme();
+            },
+          ),
+        ],
+      ),
       body: Column(
         children: [
           Expanded(

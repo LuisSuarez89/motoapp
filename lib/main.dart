@@ -6,6 +6,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'screens/home_screen.dart';
 import 'services/checklist_service.dart';
 import 'theme/app_theme.dart';
+import 'theme/theme_provider.dart';
 import 'managers/app_open_ad_manager.dart';
 
 Future<void> main() async {
@@ -23,14 +24,14 @@ Future<void> main() async {
   ));
 }
 
-class MotoApp extends StatefulWidget {
+class MotoApp extends ConsumerStatefulWidget {
   const MotoApp({super.key});
 
   @override
-  State<MotoApp> createState() => _MotoAppState();
+  ConsumerState<MotoApp> createState() => _MotoAppState();
 }
 
-class _MotoAppState extends State<MotoApp> with WidgetsBindingObserver {
+class _MotoAppState extends ConsumerState<MotoApp> with WidgetsBindingObserver {
   late AppOpenAdManager _appOpenAdManager;
 
   @override
@@ -58,10 +59,14 @@ class _MotoAppState extends State<MotoApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
+    final themeMode = ref.watch(themeModeProvider);
+    
     return MaterialApp(
       title: 'MotoApp',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeMode,
       home: const HomeScreen(),
     );
   }
