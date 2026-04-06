@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/app_models.dart';
 import '../services/app_data_service.dart';
@@ -19,9 +20,60 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   BrandData? selectedBrand;
   MotorcycleModel? selectedModel;
 
+  String? _savedCountry;
+  String? _savedBrand;
+  String? _savedModel;
+  bool _isInit = false;
+  bool _prefsLoaded = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPreferences();
+  }
+
+  Future<void> _loadPreferences() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _savedCountry = prefs.getString('selected_country');
+      _savedBrand = prefs.getString('selected_brand');
+      _savedModel = prefs.getString('selected_model');
+      _prefsLoaded = true;
+    });
+  }
+
+  Future<void> _savePreference(String key, String? value) async {
+    final prefs = await SharedPreferences.getInstance();
+    if (value == null) {
+      prefs.remove(key);
+    } else {
+      prefs.setString(key, value);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final appData = ref.watch(appDataProvider);
+
+    appData.whenData((data) {
+      if (!_isInit && _prefsLoaded) {
+        _isInit = true;
+        if (_savedCountry != null) {
+          final countryList = data.countries.where((c) => c.name == _savedCountry).toList();
+          if (countryList.isNotEmpty) {
+            selectedCountry = countryList.first;
+            final brandList = selectedCountry!.brands.where((b) => b.name == _savedBrand).toList();
+            if (brandList.isNotEmpty) {
+              selectedBrand = brandList.first;
+              final modelList = selectedBrand!.models.where((m) => m.name == _savedModel).toList();
+              if (modelList.isNotEmpty) {
+                selectedModel = modelList.first;
+              }
+            }
+          }
+        }
+      }
+    });
 
     return Scaffold(
       appBar: AppBar(title: const Text('MotoApp Colombia')),
@@ -40,17 +92,23 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     selectedBrand = null;
                     selectedModel = null;
                   });
+                  _savePreference('selected_country', country?.name);
+                  _savePreference('selected_brand', null);
+                  _savePreference('selected_model', null);
                 },
                 onBrandChanged: (brand) {
                   setState(() {
                     selectedBrand = brand;
                     selectedModel = null;
                   });
+                  _savePreference('selected_brand', brand?.name);
+                  _savePreference('selected_model', null);
                 },
                 onModelChanged: (model) {
                   setState(() {
                     selectedModel = model;
                   });
+                  _savePreference('selected_model', model?.name);
                 },
                 onContinue: () {
                   if (selectedCountry == null || selectedBrand == null || selectedModel == null) {
