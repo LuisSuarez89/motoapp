@@ -1,59 +1,59 @@
 {
-  "name": "Honda",
+  "name": "Suzuki",
   "sharedSections": [],
   "models": [
     {
-      "name": "Wave 110S",
+      "name": "Address NM",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 160F",
+      "name": "Avenis",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 125F",
+      "name": "Viva",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190R",
+      "name": "Burgman FL",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190 STD",
+      "name": "AX4",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 150L",
+      "name": "Gixxer 150L",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 190L",
+      "name": "Gixxer 250",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XBlade",
+      "name": "Gixxer FI",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "NX 190",
+      "name": "V-Strom 1050",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "PCX160",
+      "name": "Gixxer 250S",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XRE300L Tornado",
+      "name": "V-Strom 250SX",
       "category": "Street",
       "sections": []
     }

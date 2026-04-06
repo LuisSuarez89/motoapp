@@ -1,0 +1,16 @@
+{
+  "name": "Kymco",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Twist 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Agility 125",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

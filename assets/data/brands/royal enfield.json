@@ -1,59 +1,44 @@
 {
-  "name": "Honda",
+  "name": "Royal Enfield",
   "sharedSections": [],
   "models": [
     {
-      "name": "Wave 110S",
+      "name": "Shotgun 650",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 160F",
+      "name": "Hunter 350",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 125F",
+      "name": "Classic 350",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190R",
+      "name": "Himalayan",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190 STD",
+      "name": "Scram 411",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 150L",
+      "name": "SM 650 STD",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 190L",
+      "name": "Ryggo 350",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XBlade",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "NX 190",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "PCX160",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "XRE300L Tornado",
+      "name": "INT Bear 650",
       "category": "Street",
       "sections": []
     }

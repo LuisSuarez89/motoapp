@@ -1,0 +1,16 @@
+{
+  "name": "Agusta",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Brutale 800 RR",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Xploro 300",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Benelli",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "TNT 25N",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TRK 502",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

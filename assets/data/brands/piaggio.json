@@ -1,0 +1,11 @@
+{
+  "name": "Piaggio",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Ape City",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

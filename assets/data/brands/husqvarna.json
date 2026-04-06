@@ -1,0 +1,26 @@
+{
+  "name": "Husqvarna",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Vitpilen 801",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Norden 901",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Svartpilen 250",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Svartpilen 401",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

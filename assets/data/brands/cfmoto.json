@@ -1,0 +1,16 @@
+{
+  "name": "CFMOTO",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "250 NK FLN",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "300 NK",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

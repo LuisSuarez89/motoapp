@@ -1,59 +1,54 @@
 {
-  "name": "Honda",
+  "name": "AKT",
   "sharedSections": [],
   "models": [
     {
-      "name": "Wave 110S",
+      "name": "AK125 NKD",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 160F",
+      "name": "AK125 MK4",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 125F",
+      "name": "AK150 CARGO",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190R",
+      "name": "AK200 NS",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190 STD",
+      "name": "AK250 R",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 150L",
+      "name": "AK125 CR4",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 190L",
+      "name": "AK110 NKD",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XBlade",
+      "name": "AK Wolf",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "NX 190",
+      "name": "AK150 Evo",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "PCX160",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "XRE300L Tornado",
+      "name": "AK 200 TT",
       "category": "Street",
       "sections": []
     }

@@ -1,0 +1,16 @@
+{
+  "name": "Moto Guzzi",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "V7 Stone 850",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "V85 TT",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

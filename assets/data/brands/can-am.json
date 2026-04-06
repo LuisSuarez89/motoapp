@@ -1,59 +1,49 @@
 {
-  "name": "Honda",
+  "name": "Can-Am",
   "sharedSections": [],
   "models": [
     {
-      "name": "Wave 110S",
+      "name": "Maverick X3 DS Turbo",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 160F",
+      "name": "Maverick X3 Max X RS",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 125F",
+      "name": "Maverick X3 Max X",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190R",
+      "name": "Maverick R Max",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190 STD",
+      "name": "Defender HD7",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 150L",
+      "name": "Defender Max DPS HD9",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 190L",
+      "name": "Defender Max Limited HD10",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XBlade",
+      "name": "Outlander 500 2WD",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "NX 190",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "PCX160",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "XRE300L Tornado",
+      "name": "Outlander Max DPS 700",
       "category": "Street",
       "sections": []
     }

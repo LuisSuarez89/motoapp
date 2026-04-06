@@ -1,0 +1,26 @@
+{
+  "name": "Vespa",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Primavera 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "GTS 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "GTS 300",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "VXL 150",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}
