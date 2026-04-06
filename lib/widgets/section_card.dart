@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../screens/webview_screen.dart';
 
 class SectionCard extends StatelessWidget {
   const SectionCard({
@@ -90,13 +91,26 @@ class _SectionItemTile extends StatelessWidget {
       return;
     }
 
-    if (<String>{'link', 'map', 'whatsapp', 'social'}.contains(item.type)) {
+    if (item.type == 'map') {
       final uri = Uri.parse(item.value);
       if (!await launchUrl(uri, mode: LaunchMode.externalApplication) && context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('No fue posible abrir ${item.title}.')),
         );
       }
+      return;
+    }
+
+    if (<String>{'link', 'whatsapp', 'social'}.contains(item.type)) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => WebviewScreen(
+            url: item.value,
+            title: item.title,
+          ),
+        ),
+      );
       return;
     }
 
