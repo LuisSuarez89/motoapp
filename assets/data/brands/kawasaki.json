@@ -1,0 +1,31 @@
+{
+  "name": "Kawasaki",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "KLX 140R F",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "ER 650ENTN",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "EX 500JTNAN",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Z 650FNTAN",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Z 650JTNAN",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

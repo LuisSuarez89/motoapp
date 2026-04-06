@@ -1,0 +1,31 @@
+{
+  "name": "Aprilia",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Tuono 660 Factory",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "RS 660",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "RSV4",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "RS 457",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Tuareg 660",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

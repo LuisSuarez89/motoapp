@@ -3,8 +3,63 @@
   "sharedSections": [],
   "models": [
     {
+      "name": "GPD 150 NMAX",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "YBR 125 ED",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "FZ 15-S",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "FZ 15",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "YBR Z125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "SZ 15 RR",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "YHON FI",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XT 155",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XTZ 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
       "name": "XTZ 150",
-      "category": "Dual purpose",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XTZ 250",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XMAX 300",
+      "category": "Street",
       "sections": []
     }
   ]

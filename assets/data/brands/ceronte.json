@@ -1,0 +1,16 @@
+{
+  "name": "Ceronte",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Tricargo 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Tricargo 300",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

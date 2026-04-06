@@ -1,59 +1,44 @@
 {
-  "name": "Honda",
+  "name": "BMW",
   "sharedSections": [],
   "models": [
     {
-      "name": "Wave 110S",
+      "name": "G 310 R",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 160F",
+      "name": "F 800 GS",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 125F",
+      "name": "F 900 GS",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190R",
+      "name": "R 12 G/S",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190 STD",
+      "name": "R 12 NineT",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 150L",
+      "name": "R 1300 GS",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 190L",
+      "name": "S 1000 R",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XBlade",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "NX 190",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "PCX160",
-      "category": "Street",
-      "sections": []
-    },
-    {
-      "name": "XRE300L Tornado",
+      "name": "M 1000 R",
       "category": "Street",
       "sections": []
     }

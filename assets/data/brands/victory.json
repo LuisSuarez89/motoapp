@@ -1,0 +1,21 @@
+{
+  "name": "Victory",
+  "sharedSections": [],
+  "models": [
+    {
+      "name": "Vento 150 TZ",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Vento 150 R",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Vento 250 R",
+      "category": "Street",
+      "sections": []
+    }
+  ]
+}

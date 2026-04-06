@@ -1,59 +1,79 @@
 {
-  "name": "Honda",
+  "name": "Harley-Davidson",
   "sharedSections": [],
   "models": [
     {
-      "name": "Wave 110S",
+      "name": "Breakout 117",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 160F",
+      "name": "Fat Boy 114",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 125F",
+      "name": "Hydra-Glide Revival",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190R",
+      "name": "Sport Glide",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "CB 190 STD",
+      "name": "Heritage",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 150L",
+      "name": "Low Rider S",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XR 190L",
+      "name": "Street Bob",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XBlade",
+      "name": "Road Glide",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "NX 190",
+      "name": "Street Glide",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "PCX160",
+      "name": "Ultra Limited",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "XRE300L Tornado",
+      "name": "CVO Road Glide",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Tri Glide Ultra",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Freewheeler",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Tri Glide",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Sportster S",
       "category": "Street",
       "sections": []
     }
