@@ -23,12 +23,21 @@
           "bogota",
           "radar"
         ]
-      }
+      },
       {
         "title": "Accuweather",
         "subtitle": "Radar global del clima",
         "type": "link",
         "value": "https://www.accuweather.com/es/co/national/weather-radar",
+        "tags": [
+          "radar"
+        ]
+      },
+      {
+        "title": "Ideam",
+        "subtitle": "Radares Colombia ideam",
+        "type": "link",
+        "value": "https://visualizador.ideam.gov.co/portal/apps/experiencebuilder/experience/?id=c874489bc74a477c82cb2622a92c4cea&page=Radares-Meteorol%C3%B3gicos---Colombia",
         "tags": [
           "radar"
         ]
