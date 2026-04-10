@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/app_models.dart';
 import '../services/app_data_service.dart';
@@ -80,6 +81,21 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       appBar: AppBar(
         title: const Text('MotoApp Colombia'),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.play_circle_filled),
+            color: Colors.red,
+            tooltip: 'Canal de YouTube',
+            onPressed: () async {
+              final uri = Uri.parse('https://www.youtube.com/@LuiZontes');
+              if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('No fue posible abrir YouTube.')),
+                  );
+                }
+              }
+            },
+          ),
           IconButton(
             icon: Icon(ref.watch(themeModeProvider) == ThemeMode.dark 
                 ? Icons.light_mode 
