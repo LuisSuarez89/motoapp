@@ -102,6 +102,16 @@ class _SectionItemTile extends StatelessWidget {
     }
 
     if (<String>{'link', 'whatsapp', 'social'}.contains(item.type)) {
+      if (item.value.contains('x.com') || item.value.contains('twitter.com')) {
+        final uri = Uri.parse(item.value);
+        if (!await launchUrl(uri, mode: LaunchMode.externalApplication) && context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('No fue posible abrir ${item.title}.')),
+          );
+        }
+        return;
+      }
+
       Navigator.push(
         context,
         MaterialPageRoute(

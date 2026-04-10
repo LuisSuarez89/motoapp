@@ -9,14 +9,29 @@
         "subtitle": "Lluvias Bogotá y alrededores",
         "type": "link",
         "value": "https://app.sab.gov.co/sab/lluvias.htm",
-        "tags": ["bogota", "lluvias"]
+        "tags": [
+          "bogota",
+          "lluvias"
+        ]
       },
       {
         "title": "Radar animado SIRE",
         "subtitle": "Mapa animado de precipitaciones",
         "type": "link",
         "value": "https://evp.sire.gov.co/radar_animate/inicio.html#10/4.6633/-74.1481",
-        "tags": ["bogota", "radar"]
+        "tags": [
+          "bogota",
+          "radar"
+        ]
+      }
+      {
+        "title": "Accuweather",
+        "subtitle": "Radar global del clima",
+        "type": "link",
+        "value": "https://www.accuweather.com/es/co/national/weather-radar",
+        "tags": [
+          "radar"
+        ]
       }
     ]
   },
@@ -29,15 +44,21 @@
         "title": "INVIAS #767",
         "subtitle": "Línea nacional de información vial",
         "type": "phone",
-        "value": "767",
-        "tags": ["vias", "invias"]
+        "value": "#767",
+        "tags": [
+          "vias",
+          "invias"
+        ]
       },
       {
         "title": "X de Invías",
         "subtitle": "Actualizaciones en tiempo real",
         "type": "social",
         "value": "https://x.com/InviasOficial",
-        "tags": ["social", "x"]
+        "tags": [
+          "social",
+          "x"
+        ]
       }
     ]
   },
@@ -46,11 +67,51 @@
     "title": "Grúas",
     "description": "Números útiles para emergencias y transporte de moto.",
     "items": [
-      {"title": "Grúa 1", "subtitle": "+57 319 7029028", "type": "phone", "value": "+573197029028", "tags": ["grua"]},
-      {"title": "Grúa 2", "subtitle": "+57 300 2928181", "type": "phone", "value": "+573002928181", "tags": ["grua"]},
-      {"title": "Grúa 3", "subtitle": "+57 311 2800853", "type": "phone", "value": "+573112800853", "tags": ["grua"]},
-      {"title": "Grúa 4", "subtitle": "+57 315 5763888", "type": "phone", "value": "+573155763888", "tags": ["grua"]},
-      {"title": "Grúa 5", "subtitle": "+57 312 3938977", "type": "phone", "value": "+573123938977", "tags": ["grua"]}
+      {
+        "title": "Grúa 1",
+        "subtitle": "+57 319 7029028",
+        "type": "phone",
+        "value": "+573197029028",
+        "tags": [
+          "grua"
+        ]
+      },
+      {
+        "title": "Grúa 2",
+        "subtitle": "+57 300 2928181",
+        "type": "phone",
+        "value": "+573002928181",
+        "tags": [
+          "grua"
+        ]
+      },
+      {
+        "title": "Grúa 3",
+        "subtitle": "+57 311 2800853",
+        "type": "phone",
+        "value": "+573112800853",
+        "tags": [
+          "grua"
+        ]
+      },
+      {
+        "title": "Grúa 4",
+        "subtitle": "+57 315 5763888",
+        "type": "phone",
+        "value": "+573155763888",
+        "tags": [
+          "grua"
+        ]
+      },
+      {
+        "title": "Grúa 5",
+        "subtitle": "+57 312 3938977",
+        "type": "phone",
+        "value": "+573123938977",
+        "tags": [
+          "grua"
+        ]
+      }
     ]
   }
 ]
