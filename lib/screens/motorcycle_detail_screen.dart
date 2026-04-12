@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/app_models.dart';
 import '../services/app_data_service.dart';
@@ -103,13 +104,82 @@ class _SectionListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       padding: const EdgeInsets.all(16),
-      itemCount: sections.length,
+      itemCount: sections.length + 1,
       itemBuilder: (context, index) {
+        if (index == sections.length) {
+          return const Padding(
+            padding: EdgeInsets.only(top: 16),
+            child: _SuggestionsCard(),
+          );
+        }
         return SectionCard(
           section: sections[index],
           initiallyExpanded: index == 0,
         );
       },
+    );
+  }
+}
+
+class _SuggestionsCard extends StatelessWidget {
+  const _SuggestionsCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 2,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: () async {
+          final uri = Uri.parse('https://forms.gle/BgnRWFz3UEH8Jwxd9');
+          if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+            if (context.mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('No fue posible abrir el formulario.')),
+              );
+            }
+          }
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.secondaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(
+                  Icons.feedback_outlined,
+                  color: Theme.of(context).colorScheme.onSecondaryContainer,
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Sugerencias y comentarios',
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'Déjanos tus ideas para mejorar la aplicación',
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.open_in_new, size: 20, color: Colors.grey),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

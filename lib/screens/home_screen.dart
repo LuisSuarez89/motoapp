@@ -79,11 +79,26 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MotoApp Colombia'),
+        title: Row(
+          children: [
+            Image.asset(
+              'assets/icon/app_icon.png',
+              height: 32, // Adjust height
+              errorBuilder: (context, error, stackTrace) => const Icon(Icons.motorcycle),
+            ),
+            const SizedBox(width: 8),
+            const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Parche Moto', style: TextStyle(fontSize: 20)),
+                Text('Donde el usuario manda', style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal)),
+              ],
+            ),
+          ],
+        ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.play_circle_filled),
-            color: Colors.red,
+            icon: Image.asset('assets/icon/youtube-logo.png', height: 28, errorBuilder: (context, error, stackTrace) => const Icon(Icons.play_circle_filled, color: Colors.red)),
             tooltip: 'Canal de YouTube',
             onPressed: () async {
               final uri = Uri.parse('https://www.youtube.com/@LuiZontes');
