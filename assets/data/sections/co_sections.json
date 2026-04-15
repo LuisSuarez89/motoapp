@@ -2,7 +2,7 @@
   {
     "id": "climate",
     "title": "Clima",
-    "description": "Consulta rápida del radar de lluvias en Bogotá y alrededores.",
+    "description": "Consulta clima y condiciones en tiempo real para Bogotá y Colombia.",
     "items": [
       {
         "title": "Radar SAB Bogotá",
@@ -25,6 +25,16 @@
         ]
       },
       {
+        "title": "Windy Colombia",
+        "subtitle": "Radar meteorológico en tiempo real",
+        "type": "link",
+        "value": "https://www.windy.com",
+        "tags": [
+          "colombia",
+          "radar"
+        ]
+      },
+      {
         "title": "Accuweather",
         "subtitle": "Radar global del clima",
         "type": "link",
@@ -35,10 +45,11 @@
       },
       {
         "title": "Ideam",
-        "subtitle": "Radares Colombia ideam",
+        "subtitle": "Radares meteorológicos de Colombia",
         "type": "link",
         "value": "https://visualizador.ideam.gov.co/portal/apps/experiencebuilder/experience/?id=c874489bc74a477c82cb2622a92c4cea&page=Radares-Meteorol%C3%B3gicos---Colombia",
         "tags": [
+          "colombia",
           "radar"
         ]
       }
@@ -46,21 +57,61 @@
   },
   {
     "id": "roads",
-    "title": "Estado de las vías",
-    "description": "Canales oficiales para revisar novedades de movilidad y cierres.",
+    "title": "Estado de vías",
+    "description": "Canales oficiales y en vivo para revisar movilidad, cierres y pico y placa.",
     "items": [
       {
-        "title": "INVIAS #767",
-        "subtitle": "Línea nacional de información vial",
-        "type": "phone",
-        "value": "#767",
+        "title": "INVÍAS SIV",
+        "subtitle": "Estado nacional de vías (oficial)",
+        "type": "link",
+        "value": "https://hermes2.invias.gov.co/SIV/",
         "tags": [
           "vias",
           "invias"
         ]
       },
       {
-        "title": "X de Invías",
+        "title": "Línea INVÍAS nacional",
+        "subtitle": "01800 519 1656",
+        "type": "phone",
+        "value": "018005191656",
+        "tags": [
+          "vias",
+          "invias"
+        ]
+      },
+      {
+        "title": "Waze",
+        "subtitle": "Tráfico en tiempo real",
+        "type": "link",
+        "value": "https://www.waze.com",
+        "tags": [
+          "trafico",
+          "mapa"
+        ]
+      },
+      {
+        "title": "Tránsito Bogotá",
+        "subtitle": "Secretaría de Movilidad",
+        "type": "link",
+        "value": "https://www.movilidadbogota.gov.co",
+        "tags": [
+          "bogota",
+          "movilidad"
+        ]
+      },
+      {
+        "title": "Pico y placa Bogotá",
+        "subtitle": "Consulta actualizada",
+        "type": "link",
+        "value": "https://www.pyphoy.com/bogota",
+        "tags": [
+          "bogota",
+          "pico-y-placa"
+        ]
+      },
+      {
+        "title": "X de INVÍAS",
         "subtitle": "Actualizaciones en tiempo real",
         "type": "social",
         "value": "https://x.com/InviasOficial",
@@ -72,8 +123,119 @@
     ]
   },
   {
+    "id": "paperwork",
+    "title": "Trámites",
+    "description": "Consulta rápida de estado del vehículo, licencia y multas.",
+    "items": [
+      {
+        "title": "RUNT",
+        "subtitle": "Consultas de vehículo y licencia",
+        "type": "link",
+        "value": "https://www.runt.com.co",
+        "tags": [
+          "tramites",
+          "vehiculo"
+        ]
+      },
+      {
+        "title": "SIMIT",
+        "subtitle": "Consulta de multas",
+        "type": "link",
+        "value": "https://www.fcm.org.co/simit",
+        "tags": [
+          "tramites",
+          "multas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emergencies",
+    "title": "Emergencias",
+    "description": "Accesos rápidos a líneas y canales de atención nacional.",
+    "items": [
+      {
+        "title": "Línea de emergencias Colombia",
+        "subtitle": "123",
+        "type": "phone",
+        "value": "123",
+        "tags": [
+          "emergencia",
+          "nacional"
+        ]
+      },
+      {
+        "title": "Policía Nacional",
+        "subtitle": "Canal oficial de denuncias",
+        "type": "link",
+        "value": "https://adenunciar.policia.gov.co/Adenunciar/Login.aspx?ReturnUrl=%2fAdenunciar%2fdefault.aspx",
+        "tags": [
+          "seguridad",
+          "policia"
+        ]
+      },
+      {
+        "title": "Cruz Roja Colombiana",
+        "subtitle": "Contacto por WhatsApp",
+        "type": "whatsapp",
+        "value": "https://api.whatsapp.com/send/?phone=573228807469&text=Necesito+ayuda&app_absent=0",
+        "tags": [
+          "emergencia",
+          "salud"
+        ]
+      },
+      {
+        "title": "Defensa Civil",
+        "subtitle": "Chat de atención",
+        "type": "link",
+        "value": "https://defensacivil.gov.co/tools/phplive/phplive.php?d=0&onpage=livechatimagelink&title=L&tokey=fdd82327039a05423821bc979cc778f1&token=fae78f5e23c882beae4df7ff4c6f65f4&tokey=c4261b3195bd86912ee20dcae27f52c0",
+        "tags": [
+          "emergencia",
+          "defensa-civil"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "parts",
+    "title": "Repuestos",
+    "description": "Tiendas y referencias útiles para compras y ruta larga.",
+    "items": [
+      {
+        "title": "SICOM",
+        "subtitle": "Precios oficiales de combustible",
+        "type": "link",
+        "value": "https://www.sicom.gov.co",
+        "tags": [
+          "gasolina",
+          "precios"
+        ]
+      },
+      {
+        "title": "Terpel",
+        "subtitle": "Estaciones y servicios",
+        "type": "link",
+        "value": "https://www.terpel.com/estaciones-de-servicio/encuentra-estaciones-terpel-cerca-de-ti-y-programa-tus-paradas",
+        "tags": [
+          "gasolina",
+          "estaciones"
+        ]
+      },
+      {
+        "title": "MercadoLibre Colombia",
+        "subtitle": "Repuestos y accesorios",
+        "type": "link",
+        "value": "https://www.mercadolibre.com.co",
+        "tags": [
+          "repuestos",
+          "tienda"
+        ]
+      }
+    ]
+  },
+  {
     "id": "tow",
-    "title": "Grúas",
+    "title": "Talleres y grúas",
     "description": "Números útiles para emergencias y transporte de moto.",
     "items": [
       {
@@ -119,6 +281,33 @@
         "value": "+573123938977",
         "tags": [
           "grua"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "community",
+    "title": "Comunidad y rutas",
+    "description": "Herramientas para descubrir rutas y ubicaciones útiles en carretera.",
+    "items": [
+      {
+        "title": "Wikiloc",
+        "subtitle": "Rutas recomendadas",
+        "type": "link",
+        "value": "https://www.wikiloc.com",
+        "tags": [
+          "rutas",
+          "comunidad"
+        ]
+      },
+      {
+        "title": "Google Maps",
+        "subtitle": "Rutas y ubicaciones",
+        "type": "map",
+        "value": "https://maps.google.com",
+        "tags": [
+          "mapa",
+          "rutas"
         ]
       }
     ]
