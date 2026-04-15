@@ -41,6 +41,7 @@ class SectionCard extends StatelessWidget {
       case 'roads':
         return Icons.route_outlined;
       case 'workshops':
+      case 'tow':
         return Icons.garage_outlined;
       case 'parts':
         return Icons.settings_input_component_outlined;
@@ -48,6 +49,12 @@ class SectionCard extends StatelessWidget {
         return Icons.play_circle_outline;
       case 'social':
         return Icons.groups_outlined;
+      case 'paperwork':
+        return Icons.description_outlined;
+      case 'emergencies':
+        return Icons.emergency_outlined;
+      case 'community':
+        return Icons.explore_outlined;
       default:
         return Icons.info_outline;
     }
