@@ -61,6 +61,76 @@
       "name": "XMAX 300",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "XTZ150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XTZ125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "FZ25",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "FZ16",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "FZ-S FI",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "MT-03",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "R3",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "R15",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Crypton FI",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "SZ-RR",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "BWS 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "NMax 155",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Aerox 155",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XMax 300",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

@@ -56,6 +56,76 @@
       "name": "XRE300L Tornado",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "CB110",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CB125F",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CB160F",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CB190R",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XR150L",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XR190L",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "XRE300",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CRF250L",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CBR150R",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CBR250R",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "PCX150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "ADV150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Elite 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Dio 110",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

@@ -11,6 +11,36 @@
       "name": "TRK 502",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "TNT 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TNT 300",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TNT 600",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TRK 251",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Leoncino 250",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Leoncino 500",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

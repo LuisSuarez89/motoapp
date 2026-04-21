@@ -51,6 +51,76 @@
       "name": "AK 200 TT",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "TT125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TT150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CR4 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "CR5 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Dynamic Pro 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "NKD 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TTR 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "TTR 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Jet 4 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Jet 5 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "AK200 TT DS",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "AK110",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Special 110",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Flex 125",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

@@ -41,6 +41,31 @@
       "name": "M 1000 R",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "G310R",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "G310GS",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "F750GS",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "F850GS",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "S1000RR",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

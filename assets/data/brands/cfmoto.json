@@ -11,6 +11,41 @@
       "name": "300 NK",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "150NK",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "250NK",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "300NK",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "400NK",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "650NK",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "650MT",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "700CL-X",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

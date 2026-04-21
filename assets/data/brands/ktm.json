@@ -41,6 +41,46 @@
       "name": "890 Adventure R",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "Duke 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Duke 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Duke 250",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Duke 390",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "RC 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "RC 390",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Adventure 250",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Adventure 390",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

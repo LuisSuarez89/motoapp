@@ -1,24 +1,24 @@
 {
-  "name": "Piaggio",
+  "name": "UM",
   "sharedSections": [],
   "models": [
     {
-      "name": "Ape City",
+      "name": "Dyna 200",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Liberty 150",
+      "name": "Xtreet 230",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Sprint 150",
+      "name": "Renegade Commando",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Primavera 150",
+      "name": "Renegade Sport",
       "category": "Street",
       "sections": []
     }
