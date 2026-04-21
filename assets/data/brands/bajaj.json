@@ -1,69 +1,69 @@
 {
-  "name": "Royal Enfield",
+  "name": "Bajaj",
   "sharedSections": [],
   "models": [
     {
-      "name": "Shotgun 650",
+      "name": "CT100",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Hunter 350",
+      "name": "Boxer 100",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Classic 350",
+      "name": "Boxer 150",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Himalayan",
+      "name": "Discover 125",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Scram 411",
+      "name": "Discover 150",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "SM 650 STD",
+      "name": "Pulsar NS125",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Ryggo 350",
+      "name": "Pulsar NS160",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "INT Bear 650",
+      "name": "Pulsar NS200",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Bullet 350",
+      "name": "Pulsar RS200",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Meteor 350",
+      "name": "Pulsar 180",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Himalayan 411",
+      "name": "Dominar 250",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Interceptor 650",
+      "name": "Dominar 400",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Continental GT 650",
+      "name": "Avenger 220",
       "category": "Street",
       "sections": []
     }

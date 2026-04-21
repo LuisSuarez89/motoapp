@@ -16,6 +16,26 @@
       "name": "Vento 250 R",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "MRX 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "MRX 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Nitro 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Nitro 150",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

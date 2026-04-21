@@ -26,6 +26,41 @@
       "name": "Z 650JTNAN",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "Ninja 300",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Ninja 400",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Ninja 650",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Z400",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Z650",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Versys 300",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Versys 650",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

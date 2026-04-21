@@ -56,6 +56,51 @@
       "name": "V-Strom 250SX",
       "category": "Street",
       "sections": []
+    },
+    {
+      "name": "GN125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "GS125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "EN125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Gixxer 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Gixxer SF 150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "V-Strom 250",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "DR150",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Address 110",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Burgman Street 125",
+      "category": "Street",
+      "sections": []
     }
   ]
 }

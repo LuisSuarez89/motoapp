@@ -1,24 +1,24 @@
 {
-  "name": "Piaggio",
+  "name": "Keeway",
   "sharedSections": [],
   "models": [
     {
-      "name": "Ape City",
+      "name": "RK125",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Liberty 150",
+      "name": "RKS 150",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Sprint 150",
+      "name": "TX 200",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Primavera 150",
+      "name": "Superlight 200",
       "category": "Street",
       "sections": []
     }

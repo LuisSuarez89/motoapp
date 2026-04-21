@@ -1,29 +1,34 @@
 {
-  "name": "Kymco",
+  "name": "Hero",
   "sharedSections": [],
   "models": [
     {
-      "name": "Twist 125",
+      "name": "Eco 100",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Agility 125",
+      "name": "Hunk 160R",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Like 125",
+      "name": "Xtreme 160R",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Downtown 300",
+      "name": "Xtreme 200R",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "X-Town 300",
+      "name": "Xpulse 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Ignitor 125",
       "category": "Street",
       "sections": []
     }

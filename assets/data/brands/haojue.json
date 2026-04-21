@@ -1,24 +1,29 @@
 {
-  "name": "Piaggio",
+  "name": "Haojue",
   "sharedSections": [],
   "models": [
     {
-      "name": "Ape City",
+      "name": "NK150",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Liberty 150",
+      "name": "DK150",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Sprint 150",
+      "name": "DR160",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Primavera 150",
+      "name": "Lindy 125",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Cool 150",
       "category": "Street",
       "sections": []
     }

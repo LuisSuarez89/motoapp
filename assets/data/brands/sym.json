@@ -1,24 +1,29 @@
 {
-  "name": "Piaggio",
+  "name": "SYM",
   "sharedSections": [],
   "models": [
     {
-      "name": "Ape City",
+      "name": "Wolf 125",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Liberty 150",
+      "name": "Wolf 150",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Sprint 150",
+      "name": "Jet 14 125",
       "category": "Street",
       "sections": []
     },
     {
-      "name": "Vespa Primavera 150",
+      "name": "Jet 14 200",
+      "category": "Street",
+      "sections": []
+    },
+    {
+      "name": "Cruisym 300",
       "category": "Street",
       "sections": []
     }
