@@ -142,6 +142,17 @@
             "taller",
             "sur"
           ]
+        },
+        {
+          "title": "Taller Las 2 Motos",
+          "subtitle": "Barrios Unidos · Recomendado · Cl 72 #20B-15, Bogotá",
+          "type": "map",
+          "value": "https://maps.app.goo.gl/GKYrvc457sojDaft8",
+          "tags": [
+            "taller",
+            "recomendado",
+            "barrios unidos"
+          ]
         }
       ]
     },
