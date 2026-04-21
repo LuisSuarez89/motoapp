@@ -9,6 +9,9 @@
     "name": "Aprilia"
   },
   {
+    "name": "Bajaj"
+  },
+  {
     "name": "Benelli"
   },
   {
@@ -24,7 +27,13 @@
     "name": "Cfmoto"
   },
   {
+    "name": "Haojue"
+  },
+  {
     "name": "Harley-Davidson"
+  },
+  {
+    "name": "Hero"
   },
   {
     "name": "Honda"
@@ -34,6 +43,9 @@
   },
   {
     "name": "Kawasaki"
+  },
+  {
+    "name": "Keeway"
   },
   {
     "name": "Ktm"
@@ -57,7 +69,13 @@
     "name": "Suzuki"
   },
   {
+    "name": "Sym"
+  },
+  {
     "name": "Tvs"
+  },
+  {
+    "name": "Um"
   },
   {
     "name": "Vespa"
@@ -70,23 +88,5 @@
   },
   {
     "name": "Zontes"
-  },
-  {
-    "name": "Bajaj"
-  },
-  {
-    "name": "Hero"
-  },
-  {
-    "name": "Haojue"
-  },
-  {
-    "name": "Sym"
-  },
-  {
-    "name": "Keeway"
-  },
-  {
-    "name": "Um"
   }
 ]
