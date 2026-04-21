@@ -16,3 +16,18 @@ Aplicación Flutter para moteros en Colombia con selección de moto, revisiones 
 flutter pub get
 flutter run
 ```
+
+## Verificación de `app-ads.txt` (AdMob)
+
+Este proyecto mantiene el archivo en dos ubicaciones para evitar despliegues incompletos:
+
+- `app-ads.txt` (raíz del repositorio)
+- `web/app-ads.txt` (se publica en la raíz del sitio al compilar Flutter Web)
+
+Validación local:
+
+```bash
+./scripts/check_app_ads.sh
+```
+
+> Nota importante para Google Play: además del archivo correcto, la app Android debe tener un **sitio web de desarrollador** configurado en la ficha de Play Console, y ese dominio debe servir `https://TU_DOMINIO/app-ads.txt`.
