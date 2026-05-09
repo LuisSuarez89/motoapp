@@ -239,15 +239,6 @@
     "description": "Números útiles para emergencias y transporte de moto.",
     "items": [
       {
-        "title": "Grúa 1",
-        "subtitle": "+57 319 7029028",
-        "type": "phone",
-        "value": "+573197029028",
-        "tags": [
-          "grua"
-        ]
-      },
-      {
         "title": "Grúa 2",
         "subtitle": "+57 300 2928181",
         "type": "phone",
@@ -279,6 +270,15 @@
         "subtitle": "+57 312 3938977",
         "type": "phone",
         "value": "+573123938977",
+        "tags": [
+          "grua"
+        ]
+      },
+      {
+        "title": "Grúa 6",
+        "subtitle": "+57 301 2232695",
+        "type": "phone",
+        "value": "+573012232695",
         "tags": [
           "grua"
         ]
