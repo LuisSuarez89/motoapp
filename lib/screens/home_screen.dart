@@ -112,6 +112,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             },
           ),
           IconButton(
+            icon: const Icon(Icons.facebook, color: Colors.blue),
+            tooltip: 'Perfil de Facebook',
+            onPressed: () async {
+              final uri = Uri.parse('https://www.facebook.com/share/1D9LaqeMAr/');
+              if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('No fue posible abrir Facebook.')),
+                  );
+                }
+              }
+            },
+          ),
+          IconButton(
             icon: Icon(ref.watch(themeModeProvider) == ThemeMode.dark 
                 ? Icons.light_mode 
                 : Icons.dark_mode),
