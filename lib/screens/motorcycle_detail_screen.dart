@@ -9,6 +9,7 @@ import '../widgets/review_checklist_card.dart';
 import '../widgets/ad_banner.dart';
 // ignore: unused_import
 import 'scanner_screen.dart';
+import 'emergency_qr_webview.dart';
 
 class MotorcycleDetailScreen extends ConsumerWidget {
   const MotorcycleDetailScreen({
@@ -102,21 +103,97 @@ class _SectionListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final insertAt = sections.indexWhere((s) => s.title.toLowerCase().contains('clima'));
+    final hasInsert = insertAt != -1;
+    final extraCount = hasInsert ? 2 : 1; // emergency card + suggestions (or only suggestions)
+
     return ListView.builder(
       padding: const EdgeInsets.all(16),
-      itemCount: sections.length + 1,
+      itemCount: sections.length + extraCount,
       itemBuilder: (context, index) {
-        if (index == sections.length) {
+        if (hasInsert && index == insertAt) {
+          return const Padding(
+            padding: EdgeInsets.only(bottom: 12),
+            child: _EmergencyQrCard(),
+          );
+        }
+
+        final suggestionsIndex = sections.length + (hasInsert ? 1 : 0);
+        if (index == suggestionsIndex) {
           return const Padding(
             padding: EdgeInsets.only(top: 16),
             child: _SuggestionsCard(),
           );
         }
+
+        final sectionIndex = index - (hasInsert && index > insertAt ? 1 : 0);
         return SectionCard(
-          section: sections[index],
-          initiallyExpanded: index == 0,
+          section: sections[sectionIndex],
+          initiallyExpanded: sectionIndex == 0,
         );
       },
+    );
+  }
+}
+
+class _EmergencyQrCard extends StatelessWidget {
+  const _EmergencyQrCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 2,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => const EmergencyQrWebView(
+                url: 'https://luissuarez89.github.io/SOS-Rider/',
+              ),
+            ),
+          );
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.secondaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(
+                  Icons.qr_code,
+                  color: Theme.of(context).colorScheme.onSecondaryContainer,
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Obten tu QR de emergencia',
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'Accede a tu código QR de emergencia',
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.open_in_new, size: 20, color: Colors.grey),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
